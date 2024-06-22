@@ -34,4 +34,4 @@ jobs:
 
       - name: Push Docker image
         run: |
-          docker push docker.io/geovanadiniz/java_pilha:${{ github.run_number }}
+          docker push docker.io/geovanadiniz/java:${{ github.run_number }}
