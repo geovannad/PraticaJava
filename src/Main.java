@@ -5,6 +5,7 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner entrada = new Scanner(System.in);
+        System.out.println("OIEEEEEE MUNDO !!!!!");
 
 
         /*
@@ -172,6 +173,7 @@ public class Main {
             } while (opcao != 6);
         }catch(Exception e){
             System.out.println("Deu erro!" + e.getMessage());
+
         }
 
 
