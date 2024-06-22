@@ -114,7 +114,7 @@ public class Main {
                 System.out.println("O valor da pilha precisa ser positiva. Insira novamente o valor: ");
                 capacidade = entrada.nextInt();
             }
-            PilhaProduto pilhaProduto = new PilhaProduto(capacidade);
+            //PilhaProduto pilhaProduto = new PilhaProduto(capacidade);
 
 
             do {
@@ -132,7 +132,7 @@ public class Main {
                     String nome = entrada.nextLine();
                     System.out.println("Insira o preço: R$");
                     double preco = entrada.nextDouble();
-                    boolean verificar = pilhaProduto.push(preco, nome, cod);
+                    boolean verificar = true;
                     if (verificar) {
                         System.out.println("Inserido!");
                     } else {
@@ -140,31 +140,31 @@ public class Main {
                     }
                 } else {
                     if (opcao == 2) {
-                        if (!pilhaProduto.isEmpty()) {
+                        if (false) {
                             System.out.println("Excluindo topo.....");
                             try {
                                 Thread.sleep(1000);
                             } catch (InterruptedException e) {
                                 throw new RuntimeException(e);
                             }
-                            System.out.println("Topo excluído: " + pilhaProduto.pop());
+                            System.out.println("Topo excluído: ");
                         }else{
                             System.out.println("Não é possível remover item com a pilha vazia ;)");
                         }
                     } else {
                         if (opcao == 3) {
-                            if (!pilhaProduto.isEmpty()) {
-                                System.out.println("Valor do topo: " + pilhaProduto.peek());
+                            if (true) {
+                                System.out.println("Valor do topo: ");
                             }
                         } else {
                             if (opcao == 4) {
-                                if (pilhaProduto.isEmpty()) {
+                                if (true) {
                                     System.out.println("Pilha vazia!");
                                 } else {
                                     System.out.println("Pilha não está vazia");
                                 }
                             } else {
-                                System.out.println(pilhaProduto);
+                                System.out.println("aaaaaaaaa");
                             }
                         }
                     }
