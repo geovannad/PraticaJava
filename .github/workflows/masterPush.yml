@@ -30,8 +30,8 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t docker.io/geovanadiniz/java:${{ github.run_number }} -f dockerfile .
+          docker build -t docker.io/geovanadiniz/java:19 -f dockerfile .
 
       - name: Push Docker image
         run: |
-          docker push docker.io/geovanadiniz/java:${{ github.run_number }}
+          docker push docker.io/geovanadiniz/java:19
