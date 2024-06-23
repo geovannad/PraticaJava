@@ -1,8 +1,8 @@
 name: Pipeline javaConsole
 
 on:
-  push:
-    branches: [ "master" ]
+  pull_request:
+    branches: [ "qa", "master" ]
 
 jobs:
   build:
