@@ -7,6 +7,7 @@ public class Main {
         Scanner entrada = new Scanner(System.in);
         System.out.println("OIEEEEEE MUNDO !!!!!");
         System.out.println("Segundo teste");
+        System.out.println("Terceito teste");
 
 
         /*
